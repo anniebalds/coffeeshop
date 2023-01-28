@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Mukta;
+}
+
+.nav-bar {
+  padding: 0.2em 3em;
+  top: 0;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(255, 216, 220);
+}
+
+#home-logo {
+  font-family: Unbounded;
+  font-size: 2.6rem;
+  color: rgb(43, 91, 61);
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+#home-logo:hover {
+  transform:scale(110%);
+  transition: all 0.3s ease-in-out
+}
+
+.nav-bar ul a {
+  text-decoration: none;
+  margin-right: 2em;
+  color: rgb(5, 12, 33);
+  font-weight: 600;
+  text-shadow: rgb(228, 225, 215) 20px 0 40px;
+  font-size: 1.4rem;
+  font-family: Unbounded;
+}
+
+.nav-bar ul a:hover {
+  color: rgb(43, 91, 61);
+  transition: 0.5s;
+}
+
+#weather {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#weather img {
+  width: 5rem;
+}
+
+#weather-temp, #weather-city {
+  color: rgb(5, 12, 33);
+  font-family: Unbounded;
+  text-shadow: rgb(228, 225, 215) 20px 0 40px;
+}
+
+.footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+.footer h2 {
+  font-size: 2rem;
+  text-align: right;
+  color: whitesmoke;
+  padding: 0 2rem;
+}
+
+.home-main {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100vw;
+  background-image: url('./../assets/home-background.jpg');
+  background-size: cover
+}
+
+.home-hero {
+  position: fixed;
+  text-align: center;
+  color: rgb(39, 15, 7);
+  font-family: Unbounded;
+
+  /* background-color: rgba(113, 140, 109, 0.5);
+  border-radius: 10px;
+  padding: 6em 10em */
+}
+
+.home-hero h1 {
+  font-size: 4rem;
+}
+
+.home-hero h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  text-shadow: rgb(228, 225, 215) 20px 0 40px;
+}
