@@ -7,18 +7,20 @@ export const Product = (props) => {
 
     const cartItemAmount = cartItems[id]
 
-    console.log(cartItems)
-
   return (
     <div className='product-card'>
+        <button className='add-to-cart-btn' onClick={() => addToCart(id)}>
+        Add to cart
+        </button>
+        <button className='add-to-cart-btn' onClick={() => removeFromCart(id)}>
+        Remove
+        </button>
+        {cartItemAmount > 0 && <p>{cartItemAmount}</p>}
         <img src={productImg} />
         <div className='product-desc'>
-        <p className='product-name'>{productName}</p>
-        <p className='product-price'>€{productPrice}.00</p>
+            <p className='product-name'>{productName}</p>
+            <p className='product-price'>€{productPrice}.00</p>
         </div>
-        <button className='add-to-cart-btn' onClick={() => addToCart(id)}>
-        Add to cart {cartItemAmount > 0 && <>{cartItemAmount}</>}
-        </button>
     </div>
     )
 }
