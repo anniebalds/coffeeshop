@@ -16,7 +16,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: rgb(255, 216, 220);
+  background-color: rgb(212, 184, 212);
 }
 
 #home-logo {
@@ -49,18 +49,24 @@ body {
 
 #weather {
   display: flex;
+  align-items: center;
+}
+
+.weather-info {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
 #weather img {
-  width: 5rem;
+  width: 3rem;
 }
 
 #weather-temp, #weather-city {
   color: rgb(5, 12, 33);
   font-family: Unbounded;
-  text-shadow: rgb(228, 225, 215) 20px 0 40px;
+  font-size: 0.8rem
 }
 
 .footer {

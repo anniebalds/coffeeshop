@@ -1,0 +1,63 @@
+body {
+    background-color: rgb(255, 246, 247);
+}
+
+.cart-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8rem;
+}
+
+h1, h2, button, .subtotal, input {
+    font-family: Unbounded;
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5em
+}
+
+h2 {
+    font-size: 1.2rem
+}
+
+.cart-items {
+    display: flex;
+    justify-content: space-around;
+    gap: 6em
+}
+
+/* .product-img {
+    width: 15%
+} */
+
+button, input {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.cart-item-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.count-handler {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    text-indent: 5.5rem;
+}
+
+button:hover {
+    color: darkolivegreen;
+}
+
+.checkout button {
+    cursor: pointer;
+}

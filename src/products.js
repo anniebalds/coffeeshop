@@ -1,6 +1,7 @@
 import product1 from './assets/coffee-beans.jpg'
 import product2 from './assets/coffee-beans.jpg'
-import product3 from './assets/terrain-mug.jpg'
+import product3 from './assets/indoor-mug.jpg'
+import product4 from './assets/terrain-mug.jpg'
 
 export const products = [
     {
@@ -15,8 +16,13 @@ export const products = [
         productImg: product2
     }, {
         id: 3,
+        productName: 'Indoor mug',
+        productPrice: 6.00,
+        productImg: product3
+    }, {
+        id: 4,
         productName: 'Camping mug',
         productPrice: 12.00,
-        productImg: product3
+        productImg: product4
     }
 ]
