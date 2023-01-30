@@ -13,16 +13,19 @@ export const CartItem = (props) => {
 
   return (
     <div className='cart-item-card'>
+
+      <img  className='product-img' src={productImg} />
+      <div className='product-desc'>
+            <p className='product-name'>{productName}</p>
+            <p className='product-price'>€{productPrice}.00</p>
+      </div>
+
       <div className='count-handler'>
         <button onClick={() => removeFromCart(id)}><MinusCircle size={32} /></button>
         <input value={cartItemAmount} onChange={(e) => updateCartItemCount(Number(e.target.value), id)}/>
         <button onClick={() => addToCart(id)}><PlusCircle size={32} /></button>
       </div>
-        <img  className='product-img' src={productImg} />
-        <div className='product-desc'>
-            <p className='product-name'>{productName}</p>
-            <p className='product-price'>€{productPrice}.00</p>
-        </div>
+
     </div>
   )
 }

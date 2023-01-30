@@ -20,11 +20,11 @@ const Cart = () => {
 
         {totalAmount > 0 ? (
         <>
-            <p className='subtotal'>Subtotal: €{totalAmount}.00</p>
             <div className='checkout'>
                 <button onClick={() => navigate('/shop')}>Continue shopping <ArrowUDownLeft size={22} /></button>
-                <button>Complete order</button>
+                <button>Go to checkout</button>
             </div>
+
             <div className='cart-items'>
                 {products.map((product) => {
                     if(cartItems[product.id] !== 0) {
@@ -32,6 +32,10 @@ const Cart = () => {
                     }
                 })}
             </div>
+
+            <p className='subtotal'>Subtotal: €{totalAmount}.00</p>
+            <p className='delivery'>Delivery options at checkout</p>
+
         </>
         ) : (
             <h2>Your basket is currently empty</h2>

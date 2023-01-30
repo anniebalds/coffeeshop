@@ -9,13 +9,13 @@ body {
     margin-top: 8rem;
 }
 
-h1, h2, button, .subtotal, input {
+h1, h2, button, .subtotal, input, .delivery {
     font-family: Unbounded;
 }
 
 h1 {
     font-size: 1.5rem;
-    margin-bottom: 1.5em
+    margin-bottom: 1.2em
 }
 
 h2 {
@@ -42,22 +42,35 @@ button, input {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: 2em 0
 }
 
 .count-handler {
+    width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
 }
 
-input {
-    text-indent: 5.5rem;
+.count-handler input {
+    width: 2rem;
+    text-indent: 0.6rem;
 }
 
-button:hover {
+button:hover, .cart-item-amount:hover {
     color: darkolivegreen;
 }
 
 .checkout button {
     cursor: pointer;
+}
+
+.checkout {
+    margin: 1em 0;
+    display: flex;
+    gap: 2em;
+}
+
+.delivery {
+    margin-top: 1em;
+    font-weight: lighter;
 }

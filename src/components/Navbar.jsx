@@ -1,8 +1,9 @@
 import React, {useContext} from 'react'
 import { Link } from 'react-router-dom'
 import { useEffect } from 'react'
-import { ShoppingCart } from 'phosphor-react'
-import { ShopContext } from '../context/shop-context'
+import { ShoppingCart, TreeEvergreen } from 'phosphor-react'
+import { ShopContext } from '../context/shop-context' 
+
 
 const Navbar = () => {
 
@@ -28,12 +29,12 @@ const Navbar = () => {
 
   return (
     <div className='nav-bar'>
-        <Link to='/' className='home-logo' id='home-logo'>Terrain</Link>
+        <div className="home-logo"><Link to='/' id='home-logo'>Terrain<TreeEvergreen size={32} /></Link>
+        </div>
         <div id='weather'></div>
         <ul className='nav-links'>
-            <Link to='/story'>Story</Link>
+            <Link to='/contact'>Find us</Link>
             <Link to='/shop'>Shop</Link>
-            <Link to='/contact'>Contact</Link>
             <Link to='/cart'><ShoppingCart size={24}/><span>€{totalAmount}</span></Link>
         </ul>
     </div>

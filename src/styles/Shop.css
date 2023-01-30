@@ -3,18 +3,27 @@ body {
 }
 
 .shop-head {
-    margin-top: 5.8rem;
-    padding: 3.5rem;
-    /* background-image: url('/public/assets/snow-mountains.jpg');
-    background-size: cover; */
-    background-color: rgb(80, 120, 231);
+    margin-top: 4.9rem;
     position: fixed;
+    background-color: rgb(77, 129, 65);
     width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;  
+    padding: 2em ;
+    font-family: Unbounded;
 }
 
-.shop-head h3 {
+.shop-head h1 {
+    font-size: 1.4rem;
+    margin: 0.8em
+}
+
+.shop-head h4 {
     font-weight: lighter;
-    font-size: 1.4rem
+    font-size: 1rem;
+    margin: 0
 }
 
 .shop-content {
@@ -31,6 +40,41 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 5em
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-actions {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-top: 1em;
+    font-weight: bold;
+}
+
+.product-actions button, .product-actions span {
+    color: rgb(90, 25, 35);
+}
+
+.cart-item-amount {
+    cursor: pointer;
+}
+
+.product-card img {
+    border: 5px solid rgb(255, 246, 247);
+    border-radius: 5px;
+    transition: all 0.4s ease-in-out
+}
+
+.product-card img:hover {
+    border-radius: 40%;
+    border: 5px solid rgb(212, 184, 212);
 }
 
 

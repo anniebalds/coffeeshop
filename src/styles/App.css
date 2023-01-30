@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0
 }
 
 body {
@@ -25,6 +27,9 @@ body {
   color: rgb(43, 91, 61);
   font-weight: bolder;
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.2em
 }
 
 #home-logo:hover {

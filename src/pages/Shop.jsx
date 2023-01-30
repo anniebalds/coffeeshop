@@ -7,7 +7,8 @@ const Shop = () => {
   return (
     <div className='shop-main'>
       <div className='shop-head'>
-        <h3>Shop all products</h3>
+        <h1>Shop all products</h1>
+        <h4>Available for home delivery or collection from our Morzine coffee shop</h4>
       </div>
 
       <div className='shop-content'>
